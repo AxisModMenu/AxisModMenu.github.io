@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Transition</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>The fun times</h1>
+    <div class="picture-container">
+        <img src="DisplyyMenu.png" alt="Picture 1" class="picture">
+        <img src="monke.jpg" alt="Picture 2" class="picture hidden">
+        <a href="index.html" class="back-button">Back to Main Page</a>
+    </div>
+
+    <script>
+        const pictures = document.querySelectorAll(".picture");
+
+        pictures.forEach((picture, index) => {
+            picture.addEventListener("click", () => {
+                picture.style.opacity = 0;
+                setTimeout(() => {
+                    picture.classList.add("hidden"); 
+                    const nextIndex = (index + 1) % pictures.length; 
+                    pictures[nextIndex].classList.remove("hidden"); 
+                    pictures[nextIndex].style.opacity = 1; 
+                }, 300); 
+            });
+        });
+    </script>
+</body>
+</html>

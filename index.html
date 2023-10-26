@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+<title>Axis</title>
+</head>
+<body>
+    <meta property="og:title" content="Axis Mod Menu">
+    <meta property="og:description" content="The offical website of Axel a gorilla tag content">
+    <meta property="og:image" content="https://images.app.goo.gl/xUNjrsefquBHyT1k8">
+    <meta property="og:url" content="https://axismodmenu.github.io">
+    <!--So your reading this? Get out of my code! -->
+    <h1>Welcome!</h1>
+    <h6>we are in no way offilated with Another Axiom</h6>
+    <p>I am Axel a gorilla tag creator i have a discord server. I made this website as a hub for all my twitch followers, discord members, and friends so I belive this website is good to go!</p>
+    <div class="button-container">
+        <a href="https://twitch.tv/officalaxel" class="redirect-button">Go to my twitch</a>
+        <a href="https://discord.com/invite/Xe6M8mU7jf" class="right-button">Join my discord server</a>
+        <a href="https://github.com/AxisModMenu" class="right-button">Go to my github</a>
+        <a href="keyloginsystem.html" class="Key-login">Goto key login</a>
+    </div>
+    <div class="button-container">
+            <button id="osButton">What is my OS?</button>
+    <p id="osInfo"></p>
+
+    <script>
+        const osButton = document.getElementById('osButton');
+        const osInfo = document.getElementById('osInfo');
+
+        osButton.addEventListener('click', () => {
+            const userOS = detectOS();
+            osInfo.textContent = `You are using the ${userOS} OS.`;
+        });
+
+        function detectOS() {
+            const userAgent = window.navigator.userAgent;
+            if (userAgent.includes('Windows')) {
+                return 'Windows';
+            } else if (userAgent.includes('Mac OS')) {
+                return 'macOS';
+            } else if (userAgent.includes('Linux')) {
+                return 'Linux';
+            } else if (userAgent.includes('Android')) {
+                return 'Android';
+            } else if (userAgent.includes('iOS')) {
+                return 'iOS'
+            } else {
+                return 'Huh what are you using';
+            }
+            if (userAgent.includes('chromeOS')) {
+                return 'chromeOS';
+            } 
+        }
+    </script>
+        <a href="PictueLink.html" class="picture-button">View some fun times we had and will have</a>
+</body>
+</html>
+
+</body>
+
+</html>

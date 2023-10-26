@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Key Login</title>
+</head>
+<body>
+    <h1>Enter the Key</h1>
+    <form id="key-form">
+        <input type="text" id="access-key" placeholder="Enter the key">
+        <input type="submit" value="Access Page">
+    </form>
+
+    <p id="error-message"></p>
+
+    <script>
+        const keyForm = document.getElementById('key-form');
+        const accessKeyInput = document.getElementById('access-key');
+        const errorMessage = document.getElementById('error-message');
+
+        keyForm.addEventListener('submit', (event) => {
+            event.preventDefault();
+            const enteredKey = accessKeyInput.value;
+
+            if (enteredKey === 'LenTestKey') {
+                window.location.href = 'loggedin.html';
+            } else {
+                errorMessage.textContent = 'Invalid key. Please try again.';
+            }
+            if (enteredKey === 'DenTestKey') {
+                window.location.href = 'derekloggedin.html';
+            } else {
+                errorMessage.textContent = 'Invalid key. Please try again.';
+            }
+            if (enteredKey === 'XenTestKey') {
+                window.location.href = 'pong.html';
+            } else {
+                errorMessage.textContent = 'Invalid key. Please try again.';
+            }
+        });
+    </script>
+</body>
+</html>

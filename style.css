@@ -1,0 +1,279 @@
+body {
+    background-color: black;
+    color: white;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, black, rgb(131, 131, 131));
+    background-size: 100% 200%; 
+    animation: gradientAnimation 4s linear infinite; 
+}
+
+h1 {
+    color: white;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 0%;
+    }
+    25% {
+        background-position: 0% 100%;
+    }
+    50% {
+        background-position: 0% 100%;
+    }
+    75% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+.button-container {
+    text-align: center;
+}
+
+.redirect-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0074d9;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-right: 10px; 
+}
+
+.redirect-button:hover {
+    background-color: #0056a6;
+}
+
+
+.right-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #d90000;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-left: 10px; 
+}
+
+.right-button:hover {
+    background-color: #a60000;
+}
+.picture-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #009900;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-left: 10px; 
+}
+
+.picture-button:hover {
+    background-color: #007700;
+}
+.picture {
+    width: 600px;
+    height: auto; 
+    margin: 10px;
+    transition: opacity 0.3s; 
+    cursor: pointer;
+}
+
+.picture.hidden {
+    display: none;
+}
+
+.picture-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.back-button {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #0074d9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.back-button:hover {
+    background-color: #0056a6;
+}
+.right-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #d90000;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-left: 10px; 
+}
+
+.right-button:hover {
+    background-color: #a60000;
+}
+
+/* Style for the button */
+#osButton {
+    padding: 10px 20px;
+    background-color: #0074d9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+#osButton:hover {
+    background-color: #0056a6;
+}
+
+/* Style for the OS information display */
+#osInfo {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.Key-login {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #009900;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-left: 10px; 
+}
+
+.Key-login:hover {
+    background-color: #007700;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+#flip-coin-button {
+    background-color: #0074d9;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#flip-coin-button:hover {
+    background-color: #0056b3;
+}
+
+.result {
+    font-size: 20px;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #0074d9;
+    background-color: #00aeff;
+    text-align: center;
+}
+/* Write CSS Here */
+body {
+	text-align: center;
+}
+.geeks {
+	font-size: 40px;
+	font-weight: bold;
+	color: green;
+}
+/* Style the canvas */
+canvas {
+    background-color: #000;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Style the paddles */
+.paddle {
+    width: 10px;
+    height: 100px;
+    background-color: #fff;
+    position: absolute;
+}
+
+/* Style the left paddle */
+#leftPaddle {
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Style the right paddle */
+#rightPaddle {
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Style the ball */
+.ball {
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Style the score */
+.score {
+    color: #fff;
+    font-size: 24px;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Style the win screen message */
+.win-screen {
+    color: #fff;
+    font-size: 24px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
